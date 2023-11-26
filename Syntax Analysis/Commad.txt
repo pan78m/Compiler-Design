@@ -1,0 +1,41 @@
+main: cal.l cal.y
+	bison -d cal.y
+	flex cal.l
+	gcc cal.tab.c lex.yy.c
+	a <input.txt> output.txt
+M1:   Check_A_Eaual_what.l Check_A_Eaual_what.y
+	bison -d Check_A_Eaual_what.y
+	flex Check_A_Eaual_what.l
+	gcc Check_A_Eaual_what.tab.c lex.yy.c
+	a <input.txt> output.txt
+
+task_3: task_3.l task_3.y
+	bison -d task_3.y	
+	flex task_3.l	
+	gcc task_3.tab.c lex.yy.c	
+	a <input.txt> output.txt
+
+task_2: task_2.l task_2.y
+	bison -d task_2.y	
+	flex task_2.l	
+	gcc task_2.tab.c lex.yy.c	
+	a <input.txt> output.txt
+
+task_1: task_1.l task_1.y
+	bison -d task_1.y	
+	flex task_1.l	
+	gcc task_1.tab.c lex.yy.c	
+	a <input.txt> output.txt	
+
+
+
+id_d: ID|id_d
+    
+    ;
+exp : exp ADD exp
+    | exp SUB exp
+    | exp MUL exp
+    | exp DIV exp
+    | exp MODD exp
+    | NUM
+    ;
