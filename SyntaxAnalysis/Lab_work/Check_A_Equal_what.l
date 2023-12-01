@@ -1,6 +1,12 @@
 %option noyywrap
 %{
    #include "Check_A_Equal_what.tab.h"
+   /*Input
+    if(a==2)
+{
+      var=5;
+}
+   */
 %}
 delim [ \t\n]
 ws {delim}+

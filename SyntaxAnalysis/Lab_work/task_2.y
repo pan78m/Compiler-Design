@@ -2,16 +2,19 @@
 #include <stdio.h>
 void yyerror(char* s);
 int yylex();
+/*Input
+   B34 & DF ^# 2
+   */
 
 %}
 
-%token NUM ADD SUB MUL DIV ID ASSIGN SEMI
+%token NUM ADD SUB MUL DIV ID ASSIGN SEMI EQ AND SPC
 %start cal 
 %left ADD SUB
 %left MUL DIV
 %%
 
-cal: ID ASSIGN exp SEMI|exp
+cal: ID AND ID SPC exp
     
     ;
 exp : exp ADD exp
@@ -21,12 +24,11 @@ exp : exp ADD exp
     | NUM
     ;
 
-
 %%
 
 int main(){
     yyparse();
-    printf("Parsing Successful\n");
+    printf("Task_2 Parsing Successful\n");
 }
 
 void yyerror(char* s){

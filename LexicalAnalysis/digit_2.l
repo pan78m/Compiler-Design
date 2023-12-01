@@ -2,7 +2,7 @@
 #include <stdio.h>
 %}
 %%
-[0-9]   { printf("%s=>is a digit.\n",yytext); }
+[0-9]*   { printf("%s=>is a digit.\n",yytext); }
 .     { printf("%s=>is not a digit.\n",yytext); }
 
 %%

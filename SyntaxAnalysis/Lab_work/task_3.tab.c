@@ -73,11 +73,18 @@
 #include <stdio.h>
 void yyerror(char* s);
 int yylex();
+/*Input
+     if(a==2)
+{
+      var=5;
+      var_2=8;
+}
+   */
 
 
 
 /* Line 189 of yacc.c  */
-#line 81 "task_3.tab.c"
+#line 88 "task_3.tab.c"
 
 /* Enabling traces.  */
 #ifndef YYDEBUG
@@ -135,7 +142,7 @@ typedef int YYSTYPE;
 
 
 /* Line 264 of yacc.c  */
-#line 139 "task_3.tab.c"
+#line 146 "task_3.tab.c"
 
 #ifdef short
 # undef short
@@ -421,7 +428,7 @@ static const yytype_int8 yyrhs[] =
 /* YYRLINE[YYN] -- source line where rule number YYN was defined.  */
 static const yytype_uint8 yyrline[] =
 {
-       0,    14,    14,    16,    16,    18,    19,    20,    21,    22
+       0,    21,    21,    23,    23,    25,    26,    27,    28,    29
 };
 #endif
 
@@ -1331,7 +1338,7 @@ yyreduce:
       
 
 /* Line 1455 of yacc.c  */
-#line 1335 "task_3.tab.c"
+#line 1342 "task_3.tab.c"
       default: break;
     }
   YY_SYMBOL_PRINT ("-> $$ =", yyr1[yyn], &yyval, &yyloc);
@@ -1543,7 +1550,7 @@ yyreturn:
 
 
 /* Line 1675 of yacc.c  */
-#line 26 "task_3.y"
+#line 33 "task_3.y"
 
 
 int main(){

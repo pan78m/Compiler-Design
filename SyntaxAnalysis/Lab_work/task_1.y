@@ -2,6 +2,9 @@
 #include <stdio.h>
 void yyerror(char* s);
 int yylex();
+/*Input
+   A % 2 == 4
+   */
 
 %}
 

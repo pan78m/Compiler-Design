@@ -2,6 +2,13 @@
 #include <stdio.h>
 void yyerror(char* s);
 int yylex();
+/*Input
+     if(a==2)
+{
+      var=5;
+      var_2=8;
+}
+   */
 
 %}
 

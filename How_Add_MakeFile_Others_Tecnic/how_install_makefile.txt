@@ -1,0 +1,2 @@
+1. Install ->https://bobbyhadz.com/blog/choco-is-not-recognized-as-internal-or-external-command
+2. Follow this Step -> https://bobbyhadz.com/blog/make-is-not-recognized-as-internal-or-external-command

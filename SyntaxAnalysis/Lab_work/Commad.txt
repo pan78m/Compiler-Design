@@ -3,6 +3,7 @@ main: cal.l cal.y
 	flex cal.l
 	gcc cal.tab.c lex.yy.c
 	a <input.txt> output.txt
+	
 M1:   Check_A_Eaual_what.l Check_A_Eaual_what.y
 	bison -d Check_A_Eaual_what.y
 	flex Check_A_Eaual_what.l
