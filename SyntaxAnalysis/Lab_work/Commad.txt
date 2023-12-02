@@ -15,6 +15,17 @@ task_3: task_3.l task_3.y
 	flex task_3.l	
 	gcc task_3.tab.c lex.yy.c	
 	a <input.txt> output.txt
+task_4: task_4.l task_4.y
+	bison -d task_4.y	
+	flex task_4.l	
+	gcc task_4.tab.c lex.yy.c	
+	a <input.txt> output.txt
+	
+task_5_forLoop: task_5_forLoop.l task_5_forLoop.y
+	bison -d task_5_forLoop.y	
+	flex task_5_forLoop.l	
+	gcc task_5_forLoop.tab.c lex.yy.c	
+	a <input.txt> output.txt
 
 task_2: task_2.l task_2.y
 	bison -d task_2.y	
