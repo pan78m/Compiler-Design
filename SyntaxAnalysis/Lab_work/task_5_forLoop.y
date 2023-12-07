@@ -3,12 +3,11 @@
 void yyerror(char* s);
 int yylex();
 /*Input
- while(x!=2){
-	y--;
-	a = a+ 5;
+for(int i = 2 ; i < 5; i++){
+	x = x + x;
+	y = y & y;
 }
    */
-
 %}
 
 %token keyword LP Type ID ASSIGN NUM SEMI Gre ADD RP LB And RB 
@@ -27,8 +26,6 @@ exp : ID ADD ID
     | NUM  
     | ID
     ;
-
-
 %%
 
 int main(){

@@ -1,11 +1,3 @@
-
-/* id er uporer gula keyword 
-"!="  {return(NQ);}
-"-" {return(SUB); }
-"*" { return(MUL); }
-"/" {return(DIV); }
-*/
-
 %option noyywrap
 %{
    #include "task_5_forLoop.tab.h"

@@ -18,11 +18,7 @@ int yylex();
 
 cal: ID MODD NUM EQ NUM
     ;
-
-
-
 %%
-
 int main(){
     yyparse();
     printf("task_1 Done Parsing Successful\n");

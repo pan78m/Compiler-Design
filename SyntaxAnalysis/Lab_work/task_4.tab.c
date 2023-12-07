@@ -1557,7 +1557,7 @@ yyreturn:
 
 
 /* Line 1675 of yacc.c  */
-#line 33 "task_4.y"
+#line 32 "task_4.y"
 
 
 int main(){

@@ -29,7 +29,6 @@ exp : exp ADD exp
     | NUM
     ;
 
-
 %%
 
 int main(){

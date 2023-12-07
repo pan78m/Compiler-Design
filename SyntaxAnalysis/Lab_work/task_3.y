@@ -34,7 +34,7 @@ exp : exp ADD exp
 
 int main(){
     yyparse();
-    printf("task_3 Parsing Successful\n");
+    printf("Parsing While Loop is Successful\n");
 }
 
 void yyerror(char* s){
