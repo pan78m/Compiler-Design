@@ -1,5 +1,5 @@
-task_5_forLoop: task_5_forLoop.l task_5_forLoop.y
-	bison -d task_5_forLoop.y	
-	flex task_5_forLoop.l	
-	gcc task_5_forLoop.tab.c lex.yy.c	
+task_2: task_2.l task_2.y
+	bison -d task_2.y	
+	flex task_2.l	
+	gcc task_2.tab.c lex.yy.c	
 	a <input.txt> output.txt

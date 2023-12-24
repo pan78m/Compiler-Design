@@ -11,6 +11,7 @@ int yylex();
 %token NUM ADD SUB MUL DIV ID ASSIGN SEMI MODD EQ
 %start cal 
 %left ADD SUB
+
 %left MUL DIV MODD
 /* %left MODD */
 

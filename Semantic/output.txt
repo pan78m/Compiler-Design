@@ -1,0 +1,13 @@
+factor->num: 5
+factor->num: 2
+term*factor: 10
+factor->num: 2
+term/factor: 5
+factor->num: 7
+exp+term: 12
+factor->num: 3
+exp-term: 9
+factor->num: 2
+^exp+term: 11
+Final Result: 11
+Parsing Successful

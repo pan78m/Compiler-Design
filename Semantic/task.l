@@ -1,8 +1,8 @@
 %option noyywrap
 %{
-   #include "task_1.tab.h"
+   #include "task.tab.h"
 %}
-delim [ \t]
+delim [\t]
 ws {delim}+
 digit [0-9]
 number ({digit}+)
@@ -12,10 +12,7 @@ id ({us}|{letter})({letter}|{us}|{digit})*
 %%
 {ws} {}
 {number} {yylval = atoi(yytext); return(NUM);}
-
 {id} {return(ID);}
-"%"  {return(MODD);}
-"=="  {return(EQ);}
 "="  {return(ASSIGN);}
 ";"  {return(SEMI);}
 "+" { return(ADD); }
@@ -23,4 +20,3 @@ id ({us}|{letter})({letter}|{us}|{digit})*
 "*" { return(MUL); }
 "/" {return(DIV); }
 %%
- /* A % 2 == 4 */

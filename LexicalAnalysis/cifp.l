@@ -11,10 +11,13 @@ int float_count = 0;
 
 %%
 
-int yywrap(){}
+int yywrap(){
+    return 1;
+}
 
 int main() {
     yylex();
     printf("Integers: %d\nFloating-point numbers: %d\n", int_count, float_count);
     return 0;
 }
+// Ctrl+D stop program

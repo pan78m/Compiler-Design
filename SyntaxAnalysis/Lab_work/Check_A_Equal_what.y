@@ -14,7 +14,7 @@ int yylex();
 cal: IF LP ID EQ NUM RP LB id_dec RB 
     ;
 id_dec: ID ASSIGN exp SEMI|exp
-        ;
+    ;
 exp : exp ADD exp
     | exp SUB exp
     | exp MUL exp

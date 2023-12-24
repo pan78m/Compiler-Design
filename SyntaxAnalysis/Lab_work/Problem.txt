@@ -3,6 +3,8 @@
 
 
  A % 2 == 4
+ 
+
  ================
    B34 & DF ^# 2
 ==============
@@ -25,4 +27,9 @@ for(int i = 2 ; i < 5; i++){
 	x = x + x;
 	y = y & y;
 }
+cal: key lb key id assign num semi id ls num semi id
+plus rb ks e
+
+e: id assing id add id semi
+
 =====================

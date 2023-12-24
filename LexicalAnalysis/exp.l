@@ -1,7 +1,7 @@
 %{
 #include <stdio.h>
 %}
-//letter [a-zA-Z]
+/* letter [a-zA-Z] */
 digit [0-9]
 add ("+")
 minus ("-")

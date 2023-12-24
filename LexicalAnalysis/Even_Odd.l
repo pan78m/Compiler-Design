@@ -25,6 +25,7 @@ number_sequence [0-9]*
                                 printf("Odd number [%d]",yyleng);
                                 // return atoi(yytext);
                               }
+. {printf("No Invalid Input Try Again!!");}                      
 %%
  
 int yywrap()
