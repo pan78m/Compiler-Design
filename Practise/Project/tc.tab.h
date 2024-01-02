@@ -1,8 +1,10 @@
-/* A Bison parser, made by GNU Bison 2.7.  */
 
-/* Bison interface for Yacc-like parsers in C
+/* A Bison parser, made by GNU Bison 2.4.1.  */
+
+/* Skeleton interface for Bison's Yacc-like parsers in C
    
-      Copyright (C) 1984, 1989-1990, 2000-2012 Free Software Foundation, Inc.
+      Copyright (C) 1984, 1989, 1990, 2000, 2001, 2002, 2003, 2004, 2005, 2006
+   Free Software Foundation, Inc.
    
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -30,15 +32,6 @@
    This special exception was added by the Free Software Foundation in
    version 2.2 of Bison.  */
 
-#ifndef YY_YY_TASK_2_TAB_H_INCLUDED
-# define YY_YY_TASK_2_TAB_H_INCLUDED
-/* Enabling traces.  */
-#ifndef YYDEBUG
-# define YYDEBUG 0
-#endif
-#if YYDEBUG
-extern int yydebug;
-#endif
 
 /* Tokens.  */
 #ifndef YYTOKENTYPE
@@ -46,19 +39,13 @@ extern int yydebug;
    /* Put the tokens into the symbol table, so that GDB and other debuggers
       know about them.  */
    enum yytokentype {
-     NUM = 258,
-     ADD = 259,
-     SUB = 260,
-     MUL = 261,
-     DIV = 262,
-     ID = 263,
-     ASSIGN = 264,
-     SEMI = 265,
-     EQ = 266,
-     AND = 267,
-     SPC = 268
+     NUMBER = 258,
+     FAHRENHEIT = 259,
+     CELSIUS = 260,
+     EOL = 261
    };
 #endif
+
 
 
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
@@ -70,18 +57,4 @@ typedef int YYSTYPE;
 
 extern YYSTYPE yylval;
 
-#ifdef YYPARSE_PARAM
-#if defined __STDC__ || defined __cplusplus
-int yyparse (void *YYPARSE_PARAM);
-#else
-int yyparse ();
-#endif
-#else /* ! YYPARSE_PARAM */
-#if defined __STDC__ || defined __cplusplus
-int yyparse (void);
-#else
-int yyparse ();
-#endif
-#endif /* ! YYPARSE_PARAM */
 
-#endif /* !YY_YY_TASK_2_TAB_H_INCLUDED  */

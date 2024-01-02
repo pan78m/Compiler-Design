@@ -1,8 +1,10 @@
-/* A Bison parser, made by GNU Bison 2.7.  */
 
-/* Bison interface for Yacc-like parsers in C
+/* A Bison parser, made by GNU Bison 2.4.1.  */
+
+/* Skeleton interface for Bison's Yacc-like parsers in C
    
-      Copyright (C) 1984, 1989-1990, 2000-2012 Free Software Foundation, Inc.
+      Copyright (C) 1984, 1989, 1990, 2000, 2001, 2002, 2003, 2004, 2005, 2006
+   Free Software Foundation, Inc.
    
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -30,15 +32,6 @@
    This special exception was added by the Free Software Foundation in
    version 2.2 of Bison.  */
 
-#ifndef YY_YY_TASK_2_TAB_H_INCLUDED
-# define YY_YY_TASK_2_TAB_H_INCLUDED
-/* Enabling traces.  */
-#ifndef YYDEBUG
-# define YYDEBUG 0
-#endif
-#if YYDEBUG
-extern int yydebug;
-#endif
 
 /* Tokens.  */
 #ifndef YYTOKENTYPE
@@ -46,23 +39,51 @@ extern int yydebug;
    /* Put the tokens into the symbol table, so that GDB and other debuggers
       know about them.  */
    enum yytokentype {
-     NUM = 258,
-     ADD = 259,
-     SUB = 260,
-     MUL = 261,
-     DIV = 262,
-     ID = 263,
-     ASSIGN = 264,
-     SEMI = 265,
-     EQ = 266,
-     AND = 267,
-     SPC = 268
+     INCLUDE = 258,
+     INT = 259,
+     MAIN = 260,
+     IF = 261,
+     ELSE = 262,
+     RETURN = 263,
+     SCANF = 264,
+     PRINTF = 265,
+     LPAREN = 266,
+     RPAREN = 267,
+     LBRACE = 268,
+     RBRACE = 269,
+     COMMA = 270,
+     SEMICOLON = 271,
+     EQ = 272,
+     LT = 273,
+     ASSIGN = 274,
+     MULT = 275,
+     NUMBER = 276,
+     ID = 277,
+     STRING = 278,
+     PLUS = 279,
+     MINUS = 280,
+     ADDRESS = 281,
+     UMINUS = 282
    };
 #endif
 
 
+
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
-typedef int YYSTYPE;
+typedef union YYSTYPE
+{
+
+/* Line 1676 of yacc.c  */
+#line 7 "factorial.y"
+
+    int num;
+    char* sval;
+
+
+
+/* Line 1676 of yacc.c  */
+#line 86 "factorial.tab.h"
+} YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
 # define YYSTYPE_IS_DECLARED 1
@@ -70,18 +91,4 @@ typedef int YYSTYPE;
 
 extern YYSTYPE yylval;
 
-#ifdef YYPARSE_PARAM
-#if defined __STDC__ || defined __cplusplus
-int yyparse (void *YYPARSE_PARAM);
-#else
-int yyparse ();
-#endif
-#else /* ! YYPARSE_PARAM */
-#if defined __STDC__ || defined __cplusplus
-int yyparse (void);
-#else
-int yyparse ();
-#endif
-#endif /* ! YYPARSE_PARAM */
 
-#endif /* !YY_YY_TASK_2_TAB_H_INCLUDED  */
